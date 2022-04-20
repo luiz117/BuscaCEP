@@ -61,6 +61,8 @@
             this.mtxtCEP.Name = "mtxtCEP";
             this.mtxtCEP.Size = new System.Drawing.Size(79, 23);
             this.mtxtCEP.TabIndex = 1;
+            this.mtxtCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mtxtCEP_KeyDown);
+            this.mtxtCEP.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.mtxtCEP_PreviewKeyDown);
             // 
             // label1
             // 
@@ -111,35 +113,35 @@
             // 
             this.txtLogradouro.Location = new System.Drawing.Point(107, 135);
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(160, 23);
+            this.txtLogradouro.Size = new System.Drawing.Size(159, 23);
             this.txtLogradouro.TabIndex = 7;
             // 
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(107, 164);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(160, 23);
+            this.txtNumero.Size = new System.Drawing.Size(65, 23);
             this.txtNumero.TabIndex = 8;
             // 
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(107, 194);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(160, 23);
+            this.txtBairro.Size = new System.Drawing.Size(159, 23);
             this.txtBairro.TabIndex = 9;
             // 
             // txtMunicipio
             // 
             this.txtMunicipio.Location = new System.Drawing.Point(107, 223);
             this.txtMunicipio.Name = "txtMunicipio";
-            this.txtMunicipio.Size = new System.Drawing.Size(160, 23);
+            this.txtMunicipio.Size = new System.Drawing.Size(159, 23);
             this.txtMunicipio.TabIndex = 10;
             // 
             // txtUF
             // 
             this.txtUF.Location = new System.Drawing.Point(107, 252);
             this.txtUF.Name = "txtUF";
-            this.txtUF.Size = new System.Drawing.Size(160, 23);
+            this.txtUF.Size = new System.Drawing.Size(43, 23);
             this.txtUF.TabIndex = 11;
             // 
             // label6
@@ -155,14 +157,14 @@
             // 
             this.textCEP.Location = new System.Drawing.Point(107, 281);
             this.textCEP.Name = "textCEP";
-            this.textCEP.Size = new System.Drawing.Size(100, 23);
+            this.textCEP.Size = new System.Drawing.Size(65, 23);
             this.textCEP.TabIndex = 13;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(394, 322);
             this.Controls.Add(this.textCEP);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtUF);
